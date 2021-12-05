@@ -1,0 +1,4 @@
+GBAdel  shift   1
+GBAdel	mean	2:1.0 3:1.5
+GBAdel	prior	0:0.001 1:0.006 2:0.967	3:0.012	4:0.008	5:0.001	6:0.001
+GBAdel	sd	2:0.06

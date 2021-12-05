@@ -1,0 +1,10 @@
+chr1    155235002       T       155214375       C       c.1604G>A(p.Arg535His)
+chr1    155235003       A       155214376       G       c.1603C>T(p.Arg535Cys)
+chr1    155235007       T       155214380       C       c.1599G>A(p.Trp533Ter)
+chr1    155235057       T       155214430       C       c.1549G>A(p.Gly517Ser)
+chr1    155235101       T       155214474       C       c.1506-1G>A
+chr1    155235196       A       155214569       G       c.1504C>T(p.Arg502Cys)
+chr1    155235197       C       155214570       G       c.1503C>G(p.Asn501Lys)
+chr1    155235241       T       155214614       C       c.1459G>A(p.Ala487Thr)
+chr1    155235252       C       155214625       A,G       c.1448T>G(p.Leu483Arg)
+chr1    155235303       C       155214676       A       c.1397T>G(p.Ile466Ser)
