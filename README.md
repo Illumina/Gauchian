@@ -1,6 +1,6 @@
 # Gauchian: WGS-based GBA variant caller
 
-Gauchian is a targeted variant caller for the GBA gene based on a whole-genome sequencing (WGS) BAM file. Gauchian uses a novel method to solve the problems caused by the high sequence similarity with the pseudogene paralog GBAP1 and is able to detect variants accurately in the Exons 9-11 homology region, such as large deletions or duplications between GBA and GBAP1, and GBAP1-like variants in GBA, including p.A495P, p.L483P, p.D448H, c.1263del, RecNciI, RecTL and c.1263del+RecTL. In addition to these challenging variants, Gauchian also calls known pathogenic or likely pathogenic GBA variants classified in ClinVar. Please refer to our [preprint](https://www.medrxiv.org/content/10.1101/2021.11.12.21266253v1) for more details about the method.
+Gauchian is a targeted variant caller for the GBA gene based on a whole-genome sequencing (WGS) BAM file. Gauchian uses a novel method to solve the problems caused by the high sequence similarity with the pseudogene paralog GBAP1 and is able to detect variants accurately in the Exons 9-11 homology region, such as large deletions or duplications between GBA and GBAP1, and GBAP1-like variants in GBA, including p.A495P, p.L483P, p.D448H, c.1263del, RecNciI, RecTL and c.1263del+RecTL. In addition to these challenging variants, Gauchian also calls known pathogenic or likely pathogenic GBA variants classified in ClinVar. Gauchian has been tested on Illumina WGS data with standard sequencing depth (>=30X). Gauchian does not work on targeted sequencing data. Please refer to our [preprint](https://www.medrxiv.org/content/10.1101/2021.11.12.21266253v1) for more details about the method.
 
 ## Running the program
 
@@ -14,8 +14,7 @@ python -m gauchian --manifest MANIFEST_FILE \
                    --threads NUMBER_THREADS
 ```
 
-The manifest is a text file in which each line should list the absolute path to an input BAM/CRAM file.
-For CRAM input, it’s suggested to provide the path to the reference fasta file with `--reference` in the command.
+The manifest is a text file in which each line should list the absolute path to an input WGS BAM/CRAM file. Full WGS BAM/CRAM files are recommended. If you would like to use a subsetted bamlet, please subset using region files in gauchian/data/GBA_region_*.bed. For CRAM input, it’s suggested to provide the path to the reference fasta file with `--reference` in the command.
 
 ## Interpreting the output
 
