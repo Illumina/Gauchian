@@ -159,12 +159,12 @@ def write_to_tsv(final_output, out_tsv):
     """Prepare tsv output"""
     header = [
         "Sample",
-        "is_biallelic_GBAP1-like_variant_exon9-11",
-        "is_carrier_GBAP1-like_variant_exon9-11",
-        "total_CN",
-        "deletion_breakpoint_in_GBA_gene",
+        "is_biallelic(GBAP1-like_variant_exon9-11)",
+        "is_carrier(GBAP1-like_variant_exon9-11)",
+        "CN(GBA+GBAP1)",
+        "deletion_breakpoint_in_GBA",
         "GBAP1-like_variant_exon9-11",
-        "other_variants"
+        "other_unphased_variants"
         ]
     with open(out_tsv, "w") as tsv_output:
         tsv_output.write("\t".join(header) + "\n")
@@ -186,6 +186,8 @@ def write_to_tsv(final_output, out_tsv):
                     p1like_variants,
                     other_variants
                 ]
+                if output_per_sample[4] is None:
+                    output_per_sample[4] = "N/A"
                 tsv_output.write("\t".join([str(a) for a in output_per_sample]) + "\n")
             else:
                 tsv_output.write("\t".join([str(a) for a in [sample_id]+[None]*6]) + "\n")
