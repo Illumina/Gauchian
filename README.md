@@ -4,6 +4,10 @@ Gauchian is a targeted variant caller for the GBA gene based on a whole-genome s
 
 ## Installation
 
+This Python package is supported for Linux and macOS. It has been tested on CentOS 7.9.2009.
+
+The Python dependencies can be found in `requirements.txt`. Installation takes a few seconds.
+
 ```bash
 git clone https://github.com/Illumina/Gauchian
 cd Gauchian
