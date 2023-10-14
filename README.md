@@ -1,6 +1,6 @@
 # Gauchian: WGS-based GBA variant caller
 
-Gauchian is a targeted variant caller for the GBA gene based on a whole-genome sequencing (WGS) BAM file. Gauchian uses a novel method to solve the problems caused by the high sequence similarity with the pseudogene paralog GBAP1 and is able to detect variants accurately in the Exons 9-11 homology region, such as large deletions or duplications between GBA and GBAP1, and GBAP1-like variants in GBA, including p.A495P, p.L483P, p.D448H, c.1263del, RecNciI, RecTL and c.1263del+RecTL. In addition to these challenging variants, Gauchian also calls known pathogenic or likely pathogenic GBA variants classified in ClinVar. Gauchian has been tested on Illumina WGS data with standard sequencing depth (>=30X). Gauchian does not work on targeted sequencing data. Please refer to our [preprint](https://www.medrxiv.org/content/10.1101/2021.11.12.21266253v1) for more details about the method.
+Gauchian is a targeted variant caller for the GBA gene based on a whole-genome sequencing (WGS) BAM file. Gauchian uses a novel method to solve the problems caused by the high sequence similarity with the pseudogene paralog GBAP1 and is able to detect variants accurately in the Exons 9-11 homology region, such as large deletions or duplications between GBA and GBAP1, and GBAP1-like variants in GBA, including p.A495P, p.L483P, p.D448H, c.1263del, RecNciI, RecTL and c.1263del+RecTL. In addition to these challenging variants, Gauchian also calls known pathogenic or likely pathogenic GBA variants classified in ClinVar. Gauchian has been tested on Illumina WGS data with standard sequencing depth (>=30X). Gauchian does not work on targeted sequencing data. Please refer to our [paper](https://www.nature.com/articles/s42003-022-03610-7) for more details about the method.
 
 ## Installation
 
@@ -8,6 +8,7 @@ This Python package is supported for Linux and macOS. It has been tested on Cent
 
 The Python dependencies can be found in `requirements.txt`. Installation takes a few seconds.
 
+Gauchian can be installed with `pip install gauchian` or alternatively
 ```bash
 git clone https://github.com/Illumina/Gauchian
 cd Gauchian
